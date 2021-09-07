@@ -1,0 +1,1 @@
+O total é de R$ {total}, e as taxas são R$ {taxes}. Obrigado pela compra!
