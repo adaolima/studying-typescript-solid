@@ -1,7 +1,8 @@
 import Item from "./Item";
 
 export default class Water extends Item {
-  getTax(): number {
-    return 0;
+
+  constructor (description: string, price: number) {
+    super("Water", description, price)
   }
 }

@@ -1,4 +1,4 @@
-export default abstract class Item {
+export default class Item {
   category: string;
   description: string;
   price: number;
@@ -8,23 +8,5 @@ export default abstract class Item {
     this.description = description;
     this.price = price;
   }
-
-  calculateTax() {
-    if(this.category === "Beer") {
-      return (this.price * this.getTax()) / 100;
-    }
-    if(this.category === "Whisky") {
-      return (this.price * this.getTax()) / 100;
-    }
-    if(this.category === "Water") {
-      return (this.price * this.getTax()) / 100;
-    }
-
-    return 0;
-  }
-
-
-  abstract getTax(): number;
-
 
 }
